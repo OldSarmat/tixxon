@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>Document</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/style.css.map" />
+</head>
+
+<header class="header">
+  <div class="container">
+    <div class="header__menu" id="header__menu">
+      <a href="#"><img src="/img/logo.png" alt="logo-site" id="header__logo"></a>
+      <ul class="menu__list">
+        <li class="list__item"><a href="#" class="list__link">О нас</a></li>
+        <li class="list__item"><a href="#" class="list__link">Продукция</a></li>
+        <li class="list__item"><a href="#" class="menu__link">Контакты</a></li>
+      </ul>
+      <div class="menu__lang">
+        <div class="tabs">
+          <input class="input-ru" type="radio" name="tab-btn" id="tab-btn-1" value="" checked>
+          <label class="label-ru" for="tab-btn-1">Ru</label>
+          <input class="input-ru" type="radio" name="tab-btn" id="tab-btn-2" value="">
+          <label class="label-en" for="tab-btn-2">En</label>
+        </div>
+      </div>
+      <div class="menu__search">
+        <ul class="search__list">
+          <li class="search__item tel"><a href="tel:+78124481911" class="search__link" title="Позвонить">+7 (812)
+              448-19-11</a>
+          </li>
+          <li class="search__item search__img">
+            <div class="search__field" id="search__field">
+              <input type="text" class="search__input" placeholder="Поиск по каталогу">
+              <a href="#" class="button-search">
+                <img src="img/search-min.svg" alt="Image Button">
+              </a>
+              <a href="#header__menu" class="button-x">
+                <img src="img/X.svg" alt="Image Button">
+              </a>
+            </div>
+            <a href="#search__field"><img src="img/search.png" alt="search"></a>
+          </li>
+          <li class="search__item request">
+            <a href="#order" class="search__link" id="openModal">Оставить заявку</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="header-banner">
+    <div class="container">
+      <h1 class="header-banner__title">
+        <span class="this">TIXXON — это:</span> Бренд <br>
+        смазочных <br>
+        материалов <span class="eu">из ЕС</span><br>
+      </h1>
+      <div class="header-banner__btn">
+        <button class="header-banner__btn-1">Консультация</button>
+        <button class="header-banner__btn-2">Прайс-лист</button>
+      </div>
+    </div>
+  </div>
+</header>
+
+<div class="order" id="order">
+  <div class="order__window">
+    <a class="order__close" href="#"><img src="img/X-modal.svg" alt="modal-close"></a>
+    <h2 class="order__title">Заполните форму</h2>
+    <p class="order__text">Наш менеджер свяжется с вами в ближайшее время</p>
+    <form action="" class="order__form">
+      <input type="text" class="order__name" name="name" placeholder="Как к Вам обращаться" required>
+      <input type="text" class="order__phone" name="phone" placeholder="+7 (___) ___-____" required>
+      <input type="email" class="order__email" name="email" placeholder="Email" required>
+      <textarea name="message" id="" cols="30" rows="10" class="order__message" placeholder="Комментарий"></textarea>
+    </form>
+    <input type="checkbox" class="order__checkbox" id="order__checkbox" name="order__checkbox">
+    <label for="order__checkbox" class="order__label">Я согласен на обработку персональных данных</label>
+    <button class="order__button">Заказать</button>
+  </div>
+</div>
+
+
+<script src="js/code.jquery.com_jquery-3.7.1.min.js"></script>
+<script src="js/main.js"></script>
+</body>
+
+</html>
