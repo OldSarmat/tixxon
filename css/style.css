@@ -115,8 +115,12 @@ h1, h2, h3, h4, h5, h6 {
 }
 #order .order__window .order__close {
   position: absolute;
-  top: 20px;
+  top: 10px;
   right: 10px;
+  border-radius: 50%;
+}
+#order .order__window .order__close:hover {
+  box-shadow: 0 14px 30px rgba(223, 183, 72, 0.5);
 }
 #order .order__window .order__title {
   max-width: 447px;
