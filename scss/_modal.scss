@@ -1,6 +1,6 @@
 /*Модальные окна*/
 
-#order {
+.order {
     position: fixed;
     display: flex;
     top: 0;
@@ -67,6 +67,16 @@
                 line-height: 120%;
                 letter-spacing: 0.64px;
             }
+            input:focus,
+            textarea:focus {
+                border-radius: 6px;
+                border: 1px solid var(--Gold, #d29f13);
+                background: var(--Light, #f6f6f6);
+            }
+            // input:invalid,
+            // textarea:invalid {
+            //     border: 1px solid red;
+            // }
             .order__message {
                 max-height: 110px;
                 max-width: 100%;
@@ -100,13 +110,13 @@
             letter-spacing: 0.64px;
         }
         .order__button:hover {
-            transform: scale(1.01);
+            box-shadow: 0 14px 30px rgba(223, 183, 72, 0.5);
             background-color: #c29a2b;
         }
     }
 }
 
-#order:not(:target) {
+.order:not(:target) {
     visibility: hidden;
     opacity: 0;
 }
@@ -144,6 +154,7 @@
 
 .order__checkbox:not(:disabled):not(:checked) + label:hover::before {
     background-color: #c29a2b;
+    box-shadow: 0 14px 30px rgba(223, 183, 72, 0.5);
 }
 
 /*--------------------*/
