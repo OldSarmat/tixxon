@@ -629,7 +629,7 @@ body {
   font-style: normal;
   font-weight: 500;
   line-height: 140%;
-  background: url(../img/features-list.png) 1% 12% no-repeat;
+  background: url(../img/features-list.png) 1% 6% no-repeat;
   padding-left: 45px;
 }
 .features__list li:nth-child(1) {
