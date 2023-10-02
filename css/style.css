@@ -513,7 +513,7 @@ body {
 /*--------------------*/
 /*main site*/
 .about {
-  padding: 106px 0 140px;
+  padding: 113px 0 158px;
 }
 .about__head {
   display: flex;
@@ -557,7 +557,7 @@ body {
   padding-right: 20px;
 }
 .about__item .about__heading {
-  max-width: 325px;
+  max-width: 330px;
   color: var(--Dark, #242b2a);
   font-family: "Montserrat", sans-serif;
   font-size: 20px;
@@ -598,7 +598,7 @@ body {
 }
 
 .features {
-  padding: 60px 0 72px 0;
+  padding: 72px 0 72px 0;
   background: url(../img/features.png) 50% 50% no-repeat, var(--Gray-3, #f3f3f3);
 }
 .features__img {
