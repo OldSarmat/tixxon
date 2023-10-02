@@ -430,7 +430,6 @@ body {
 .order .order__window .order__form textarea:focus {
   border-radius: 6px;
   border: 1px solid var(--Gold, #d29f13);
-  background: var(--Light, #f6f6f6);
 }
 .order .order__window .order__form .order__message {
   max-height: 110px;
