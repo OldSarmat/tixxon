@@ -1,6 +1,6 @@
-/*Модальные окна*/
+/* Модальные окна */
 
-.order {
+.modal {
     position: fixed;
     display: flex;
     top: 0;
@@ -11,7 +11,7 @@
     justify-content: center;
     align-items: center;
 
-    .order__window {
+    &__window {
         display: flex;
         flex-direction: column;
         position: relative;
@@ -20,83 +20,47 @@
         width: 561px;
         border-radius: 16px;
         margin: 10px;
-        .order__close {
-            position: absolute;
-            top: 10px;
-            right: 10px;
-            border-radius: 50%;
-            &:hover {
-                box-shadow: 0 14px 30px rgba(223, 183, 72, 0.5);
-            }
+    }
+    &__close {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        border-radius: 50%;
+        &:hover {
+            box-shadow: 0 14px 30px rgba(223, 183, 72, 0.5);
         }
-        .order__title {
-            max-width: 447px;
-            color: var(--BG, #242b2a);
-            font-family: $Montserrat;
-            font-size: 30px;
-            font-style: normal;
-            font-weight: 500;
-            line-height: 140%;
-        }
-        .order__text {
-            max-width: 447px;
-            color: var(--Gray, #808080);
-            font-family: $Lato;
-            font-size: 16px;
-            font-style: normal;
-            font-weight: 400;
-            line-height: 150%;
-            margin: 16px 0 30px;
-        }
-        .order__form {
-            display: flex;
-            flex-direction: column;
-            align-items: flex-start;
-            gap: 12px;
-            input,
-            textarea {
-                padding: 20px 22px;
-                border-radius: 6px;
-                background: var(--Light, #f6f6f6);
-                width: 100%;
-                color: var(--Gray, #808080);
-                font-family: $Lato;
-                font-size: 16px;
-                font-style: normal;
-                font-weight: 500;
-                line-height: 120%;
-                letter-spacing: 0.64px;
-            }
-            input:focus,
-            textarea:focus {
-                border-radius: 6px;
-                border: 1px solid var(--Gold, #d29f13);
-            }
-            .order__message {
-                max-height: 110px;
-                max-width: 100%;
-                resize: none;
-            }
-        }
-        .order__label {
-            margin: 20px 0 30px;
-            color: var(--Gray, #808080);
-            font-family: $Lato;
-            font-size: 14px;
-            font-style: normal;
-            font-weight: 400;
-            line-height: 140%;
-        }
-        .order__button {
-            display: flex;
-            width: 446px;
-            padding: 20px 40px;
-            justify-content: center;
-            align-items: center;
-            gap: 10px;
+    }
+    &__title {
+        max-width: 447px;
+        color: var(--BG, #242b2a);
+        font-family: $Montserrat;
+        font-size: 30px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 140%;
+    }
+    &__text {
+        max-width: 447px;
+        color: var(--Gray, #808080);
+        font-family: $Lato;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 150%;
+        margin: 16px 0 30px;
+    }
+    &__form {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 12px;
+        input,
+        textarea {
+            padding: 20px 22px;
             border-radius: 6px;
-            background: var(--Gold, #d29f13);
-            color: var(--White, #fff);
+            background: var(--Light, #f6f6f6);
+            width: 100%;
+            color: var(--Gray, #808080);
             font-family: $Lato;
             font-size: 16px;
             font-style: normal;
@@ -104,38 +68,72 @@
             line-height: 120%;
             letter-spacing: 0.64px;
         }
-        .order__button:hover {
-            box-shadow: 0 14px 30px rgba(223, 183, 72, 0.5);
-            background-color: #c29a2b;
+        input:focus,
+        textarea:focus {
+            border-radius: 6px;
+            box-shadow: 0 0 0 1px var(--Gold, #d29f13);
         }
+        .modal__message {
+            max-height: 110px;
+            max-width: 100%;
+            resize: none;
+        }
+    }
+    &__label {
+        margin: 20px 0 30px;
+        color: var(--Gray, #808080);
+        font-family: $Lato;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 140%;
+    }
+    &__button {
+        display: flex;
+        width: 100%;
+        padding: 20px 40px;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        border-radius: 6px;
+        background: var(--Gold, #d29f13);
+        color: var(--White, #fff);
+        font-family: $Lato;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 120%;
+        letter-spacing: 0.64px;
+    }
+    &__button:hover {
+        box-shadow: 0 14px 30px rgba(223, 183, 72, 0.5);
+        background-color: #c29a2b;
     }
 }
 
-.order:not(:target) {
+.modal:not(:target) {
     visibility: hidden;
     opacity: 0;
 }
 
-.order__checkbox {
+.modal__checkbox {
     position: absolute;
     z-index: -1;
     opacity: 0;
 }
 
-.order__checkbox + label {
+.modal__checkbox + label {
     display: inline-flex;
     align-items: center;
     user-select: none;
 }
-.order__checkbox + label::before {
+.modal__checkbox + label::before {
     content: "";
     display: inline-block;
     width: 22px;
     height: 22px;
     border-radius: 4px;
     background: var(--Gold, #d29f13);
-    // flex-shrink: 0;
-    // flex-grow: 0;
     margin-right: 10px;
     background-repeat: no-repeat;
     background-position: center center;
@@ -143,13 +141,106 @@
     cursor: pointer;
 }
 
-.order__checkbox:checked + label::before {
+.modal__checkbox:checked + label::before {
     background-image: url(../img/check-white.svg);
 }
 
-.order__checkbox:not(:disabled):not(:checked) + label:hover::before {
+.modal__checkbox:not(:disabled):not(:checked) + label:hover::before {
     background-color: #c29a2b;
     box-shadow: 0 14px 30px rgba(223, 183, 72, 0.5);
 }
+
+.buy__title {
+    margin-bottom: 30px;
+}
+
+#buy {
+    p {
+        margin-top: 30px;
+        color: var(--Grafite, #343d3b);
+        font-family: $Lato;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 140%;
+    }
+    .buy__price {
+        margin: 5px 0 30px;
+        color: var(--BG, #242b2a);
+        font-family: $Montserrat;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 140%;
+    }
+    .buy__text {
+        color: var(--Gray, #808080);
+        font-family: $Lato;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 140%;
+    }
+}
+
+.quantity-control {
+    display: flex;
+    align-items: center;
+    width: 170px;
+    margin-top: 18px;
+}
+
+.quantity-control__button {
+    cursor: pointer;
+    width: 50px;
+    height: 50px;
+    padding: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    user-select: none;
+}
+
+.quantity-control__decrement {
+    background:
+        url(../img/Minus.svg) 50% 50% no-repeat,
+        #fff;
+}
+
+.quantity-control__increment {
+    background:
+        url(../img/Plus.svg) 50% 50% no-repeat,
+        #fff;
+}
+
+.quantity-control__input {
+    font-size: 16px;
+    text-align: center;
+    width: 40px;
+    padding: 5px;
+    margin: 0 5px;
+    color: var(--BG, #242b2a);
+    font-family: $Lato;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 140%;
+    background: var(--Light, #f6f6f6);
+    width: 66px;
+    height: 50px;
+}
+
+// input:required:invalid:not(:focus),
+// textarea:required:invalid:not(:focus) {
+//     border-radius: 6px;
+//     box-shadow: 0 0 0 1px var(--Gold, #f60404);
+// }
+// input:required:invalid:not(:focus)::after,
+// textarea:required:invalid:not(:focus)::after {
+//     content: "Это поле обязательно"; /* Вывод текста сообщения об ошибке */
+//     color: red; /* Изменение цвета текста сообщения об ошибке */
+//     display: block; /* Отображение сообщения как блочного элемента */
+//     font-size: 14px; /* Размер шрифта для сообщения об ошибке */
+// }
 
 /*--------------------*/

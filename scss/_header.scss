@@ -140,6 +140,15 @@
         border-radius: 6px;
         z-index: 2;
         visibility: hidden;
+        &::placeholder {
+            color: var(--Gray-2, #D1D1D1);
+            font-family: $Lato;
+            font-size: 18px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 140%; 
+            padding: 0 15px;
+        }
     }
 
     .button-search,
