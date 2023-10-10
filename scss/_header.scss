@@ -124,7 +124,7 @@
         position: absolute;
         width: 434px;
         height: 100%;
-        top: 1;
+        top: -10px;
         right: 100%;
         transition:
             left 1s ease,
@@ -136,18 +136,17 @@
         font-weight: 500;
         line-height: 140%;
         color: #d1d1d1;
-        padding: 15px 60px 15px 16px;
+        padding: 25px 60px 25px 16px;
         border-radius: 6px;
         z-index: 2;
         visibility: hidden;
         &::placeholder {
-            color: var(--Gray-2, #D1D1D1);
+            color: var(--Gray-2, #d1d1d1);
             font-family: $Lato;
             font-size: 18px;
             font-style: normal;
             font-weight: 500;
-            line-height: 140%; 
-            padding: 0 15px;
+            line-height: 140%;
         }
     }
 
@@ -160,7 +159,7 @@
     }
 
     .button-search {
-        left: -20px;
+        left: -25px;
     }
 
     .button-x {
@@ -191,14 +190,15 @@
 }
 
 .header-banner {
-    background-image: url(../img/header-tiger.png);
-    background-position: 50% 50%;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-color: #292929;
-    width: 100%;
-    height: 625px;
-    padding: 25px 0 126px;
+    background:
+        url(../img/grap.svg) left / cover no-repeat,
+        #292929;
+    
+
+    .tiger {
+        background: url(../img/tiger-1.png) 98% 100% / contain no-repeat;
+        padding: 25px 10px 126px;
+    }
 
     .header-banner__title {
         color: var(--White, #fff);
@@ -208,7 +208,6 @@
         font-weight: 700;
         line-height: 130%;
         text-transform: uppercase;
-        // background: url(../img/logo-eu-1.png) 38% 23%;
         .this {
             display: inline-block;
             color: var(--Gray, #808080);

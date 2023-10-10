@@ -34,7 +34,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
 
-//plus/minus кнопка
+//  plus/minus кнопка
 document.addEventListener("DOMContentLoaded", function () {
     const decrementButton = document.querySelector(".quantity-control__decrement");
     const incrementButton = document.querySelector(".quantity-control__increment");
@@ -55,6 +55,8 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
 //
+
+
 
 
 
