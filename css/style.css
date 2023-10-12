@@ -533,7 +533,7 @@ input::-webkit-inner-spin-button {
   margin-bottom: 30px;
 }
 
-#buy p {
+.buy p {
   margin-top: 30px;
   color: var(--Grafite, #343d3b);
   font-family: "Lato", sans-serif;
@@ -542,7 +542,7 @@ input::-webkit-inner-spin-button {
   font-weight: 500;
   line-height: 140%;
 }
-#buy .buy__price {
+.buy .buy__price {
   margin: 5px 0 30px;
   color: var(--BG, #242b2a);
   font-family: "Montserrat", sans-serif;
@@ -551,7 +551,7 @@ input::-webkit-inner-spin-button {
   font-weight: 700;
   line-height: 140%;
 }
-#buy .buy__text {
+.buy .buy__text {
   color: var(--Gray, #808080);
   font-family: "Lato", sans-serif;
   font-size: 14px;
@@ -804,9 +804,6 @@ input::-webkit-inner-spin-button {
   max-width: calc(50% - 14px);
 }
 .card-prev__img {
-  display: flex;
-  align-items: center;
-  justify-content: center;
   margin-right: 8%;
 }
 .card-prev__info {
@@ -820,7 +817,7 @@ input::-webkit-inner-spin-button {
   font-weight: 500;
   line-height: 140%;
   max-width: 245px;
-  margin: 20px 0 20px;
+  margin: 20px 0;
 }
 .card-prev__text {
   color: var(--Dark-Gray, #333938);
@@ -1320,18 +1317,18 @@ input::-webkit-inner-spin-button {
 }
 @media screen and (max-width: 530px) {
   .menu__list {
-    gap: 35px;
+    gap: 30px;
     width: auto;
   }
   .menu__search ul {
     flex-wrap: wrap;
     gap: 20px;
   }
-  .menu__search ul .tel a {
-    margin-right: 140px;
+  .menu__search ul .tel {
+    margin-right: 34%;
   }
   .search__img .search__input {
-    width: 350px;
+    width: 300px;
   }
   .header-banner .header-banner__title {
     font-size: 31px;
@@ -1366,10 +1363,44 @@ input::-webkit-inner-spin-button {
   .card-prev__btn-2 {
     padding: 20px 29px;
   }
+  .card-prev__title {
+    font-size: 25px;
+    margin: 0;
+  }
+  .card-prev__text {
+    font-size: 14px;
+    max-height: auto;
+  }
+  .card-prev button {
+    position: relative;
+    right: 50px;
+  }
   .product__tabs > label {
     margin-bottom: 15px;
   }
   .modal__window {
     padding: 20px 20px;
+  }
+  .modal__title {
+    font-size: 24px;
+    margin-top: 10px;
+  }
+  .modal__text {
+    margin: 10px 0;
+  }
+  .modal__label {
+    margin: 10px 0;
+  }
+  .modal__message {
+    max-height: 70px !important;
+  }
+  .buy__title {
+    margin-bottom: 10px;
+  }
+  .buy p {
+    margin-top: 10px;
+  }
+  .buy .buy__price {
+    margin-bottom: 10px;
   }
 }/*# sourceMappingURL=style.css.map */

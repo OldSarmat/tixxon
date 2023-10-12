@@ -259,9 +259,9 @@ input::-webkit-inner-spin-button {
     padding: 45px 0;
     max-width: calc(50% - 14px);
     &__img {
-        display: flex;
-        align-items: center;
-        justify-content: center;
+        // display: flex;
+        // align-items: center;
+        // justify-content: center;
         margin-right: 8%;
     }
     &__info {
@@ -275,7 +275,7 @@ input::-webkit-inner-spin-button {
         font-weight: 500;
         line-height: 140%;
         max-width: 245px;
-        margin: 20px 0 20px;
+        margin: 20px 0;
     }
     &__text {
         color: var(--Dark-Gray, #333938);
@@ -793,9 +793,8 @@ input::-webkit-inner-spin-button {
 }
 
 @media screen and (max-width: 530px) {
-
     .menu__list {
-        gap: 35px;
+        gap: 30px;
         width: auto;
     }
     .menu__search {
@@ -804,12 +803,12 @@ input::-webkit-inner-spin-button {
             gap: 20px;
         }
 
-        & ul .tel a {
-            margin-right: 140px;
+        & ul .tel {
+            margin-right: 34%;
         }
     }
     .search__img .search__input {
-        width: 350px;
+        width: 300px;
     }
 
     .header-banner {
@@ -849,16 +848,56 @@ input::-webkit-inner-spin-button {
         right: -9px;
         bottom: 86px;
     }
-
-    .card-prev__btn-2 {
-        padding: 20px 29px;
+    .card-prev {
+        &__btn-2 {
+            padding: 20px 29px;
+        }
+        &__title {
+            font-size: 25px;
+            margin: 0;
+        }
+        &__text {
+            font-size: 14px;
+            max-height: auto;
+        }
+        button {
+            position: relative;
+            right: 50px;
+        }
     }
 
     .product__tabs > label {
         margin-bottom: 15px;
     }
 
-    .modal__window {
-        padding: 20px 20px;
+    .modal {
+        &__window {
+            padding: 20px 20px;
+        }
+        &__title {
+            font-size: 24px;
+            margin-top: 10px;
+        }
+        &__text {
+            margin: 10px 0;
+        }
+        &__label {
+            margin: 10px 0;
+        }
+        &__message {
+            max-height: 70px !important;
+        }
+    }
+
+    .buy {
+        &__title {
+            margin-bottom: 10px;
+        }
+        p {
+            margin-top: 10px;
+        }
+        .buy__price {
+            margin-bottom: 10px;
+        }
     }
 }
