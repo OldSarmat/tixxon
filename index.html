@@ -19,10 +19,10 @@
   <header class="header">
     <div class="container">
       <div class="header__menu" id="header__menu">
-        <a href="#"><img src="img/logo.png" alt="logo-site" id="header__logo"></a>
+        <a href="index.html"><img src="img/logo.png" alt="logo-site" id="header__logo"></a>
         <ul class="menu__list">
           <li class="list__item"><a href="#" class="list__link">О нас</a></li>
-          <li class="list__item"><a href="#" class="list__link">Продукция</a></li>
+          <li class="list__item"><a href="catalog.html" class="list__link">Продукция</a></li>
           <li class="list__item"><a href="#" class="menu__link">Контакты</a></li>
         </ul>
         <div class="menu__lang">
@@ -454,7 +454,8 @@
 
           </div>
 
-          <button class="product__btn card-prev__btn-2">Перейти в каталог</button>
+          <button class="product__btn card-prev__btn-2" onclick="window.location.href='catalog.html'">Перейти в
+            каталог</button>
         </div>
     </section>
 
@@ -504,6 +505,10 @@
       </div>
     </div>
   </footer>
+
+  <button id="scrollTopButton" class="button-up">
+    <img src="img/button-Up.svg" alt="">
+  </button>
 
   <div class="modal" id="order">
     <div class="modal__window">

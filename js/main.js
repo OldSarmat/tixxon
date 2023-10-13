@@ -54,9 +54,28 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 
-//
+// кнопка ВВЕРХ
 
+document.addEventListener("DOMContentLoaded", function () {
+  const scrollTopButton = document.getElementById("scrollTopButton");
 
+  // Показать кнопку, когда пользователь прокручивает вниз
+  window.addEventListener("scroll", function () {
+    if (window.pageYOffset > 1200) {
+      scrollTopButton.style.display = "block";
+    } else {
+      scrollTopButton.style.display = "none";
+    }
+  });
+
+  // Прокрутить страницу в начало при клике на кнопку
+  scrollTopButton.addEventListener("click", function () {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth" // Плавная анимация
+    });
+  });
+});
 
 
 
