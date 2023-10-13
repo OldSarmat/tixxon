@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <meta http-equiv='cache-control' content='no-cache'>
+  <meta http-equiv='expires' content='0'>
+  <meta http-equiv='pragma' content='no-cache'>
+  <title>Document</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/style.css.map" />
+  <script src="js/code.jquery.com_jquery-3.7.1.min.js"></script>
+  <script src="js/main.js"></script>
+</head>
+
+<body>
+  <header class="header">
+    <div class="container">
+      <div class="header__menu" id="header__menu">
+        <a href="index.html"><img src="img/logo.png" alt="logo-site" id="header__logo"></a>
+        <ul class="menu__list">
+          <li class="list__item"><a href="#" class="list__link">О нас</a></li>
+          <li class="list__item"><a href="catalog.html" class="list__link">Продукция</a></li>
+          <li class="list__item"><a href="#" class="menu__link">Контакты</a></li>
+        </ul>
+        <div class="menu__lang">
+          <div class="tabs">
+            <input class="input-ru" type="radio" name="tab-btn" id="tab-btn-1" value="" checked>
+            <label class="label-ru" for="tab-btn-1">Ru</label>
+            <input class="input-ru" type="radio" name="tab-btn" id="tab-btn-2" value="">
+            <label class="label-en" for="tab-btn-2">En</label>
+          </div>
+        </div>
+        <div class="menu__search">
+          <ul class="search__list">
+            <li class="search__item tel"><a href="tel:+78124481911" class="search__link" title="Позвонить">+7 (812)
+                448-19-11</a>
+            </li>
+            <li class="search__item search__img">
+              <input type="text" class="search__input" placeholder="Поиск по каталогу">
+              <a href="#" class="button-search">
+                <img src="img/search-min.svg" alt="Image Button">
+              </a>
+              <a href="#" class="button-x">
+                <img src="img/X.svg" alt="Image Button">
+              </a>
+              <a href="#"><img src="img/search.png" alt="search"></a>
+            </li>
+            <li class="search__item request">
+              <a href="#order" class="search__link" id="search__link">Оставить заявку</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </header>
+  <main>
+    <section class="catalog">
+      <div class="container">
+        <div class="breadcrumbs">
+          <a href="index.html">Главная</a> <span>/</span>
+          <p>Каталог</p>
+        </div>
+        <div class="catalog__head product__head">
+          <h2 class="product__title">
+            Продукция TIXXON
+          </h2>
+          <p class="product__text">
+            <span>//</span><span>&nbsp;</span>Продукция Tixxon при обычных условиях эксплуатации и соблюдении правил
+            личной гигиены не
+            представляет опасности для здоровья. Tixxon гарантирует только соответствие данного продукта его текущим
+            спецификациям на момент поставки.
+          </p>
+        </div>
+        <div class="catalog__filter">
+          <div class="catalog__search">
+            <input type="text" class="catalog__search-input" placeholder="Поиск по продукции">
+            <a href="#" class="catalog__search-button">
+              <img src="img/search-min-catalog.svg" alt="Image Button">
+            </a>
+          </div>
+          <div class="catalog__dropdown">
+            <button class="catalog__dropdown-btn">Категории <span>⌵</span></button>
+            <div class="catalog__dropdown-content">
+              <div class="catalog__dropdown-item">
+                <a href="#" class="catalog__dropdown-link"><b>Категории</b><span>⌵</span></a>
+                <a href="#" class="catalog__dropdown-link">Масла</a>
+                <a href="#" class="catalog__dropdown-link">Смазочные жидкости</a>
+                <a href="#" class="catalog__dropdown-link">Автохимия</a>
+              </div>
+            </div>
+          </div>
+          <div class="catalog__dropdown">
+            <button class="catalog__dropdown-btn">Применямость <span>⌵</span></button>
+            <div class="catalog__dropdown-content">
+              <div class="catalog__dropdown-item">
+                <a href="#" class="catalog__dropdown-link"><b>Применяемость</b><span>⌵</span></a>
+                <a href="#" class="catalog__dropdown-link">Для автомобилей</a>
+                <a href="#" class="catalog__dropdown-link">Для оборудования</a>
+                <a href="#" class="catalog__dropdown-link">Для электроники</a>
+              </div>
+            </div>
+          </div>
+          <div class="catalog__dropdown">
+            <button class="catalog__dropdown-btn">Ёмкость <span>⌵</span></button>
+            <div class="catalog__dropdown-content">
+              <div class="catalog__dropdown-item">
+                <a href="#" class="catalog__dropdown-link"><b>Ёмкость</b><span>⌵</span></a>
+                <a href="#" class="catalog__dropdown-link">390 g</a>
+                <a href="#" class="catalog__dropdown-link">500 g</a>
+                <a href="#" class="catalog__dropdown-link">700 g</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="catalog__cards">
+          <div class="card-prev carousel__card">
+            <div class="card-prev__img">
+              <img src="img/card-img.png" alt="card-img">
+            </div>
+            <div class="card-prev__info">
+              <h3 class="card-prev__title">TIXXONLUBE
+                LX XHP 220-3</h3>
+              <p class="card-prev__text">Синяя комплексная литиевая высококачественная консистентная смазка на
+                основе полусинтетического базового масла и полимера, содержащая антиоксиданты, ингибиторы коррозии
+                и противозадирные, противозадирные присадки.
+              </p>
+              <button class="card-prev__btn-1" onclick="window.location.href='#buy'">Заказать</button>
+              <button class="card-prev__btn-2" onclick="window.location.href='cards.html'">Подробнее</button>
+            </div>
+          </div>
+          <div class="card-prev carousel__card">
+            <div class="card-prev__img">
+              <img src="img/card-img.png" alt="card-img">
+            </div>
+            <div class="card-prev__info">
+              <h3 class="card-prev__title">TIXXONLUBE
+                LX XHP 220-4</h3>
+              <p class="card-prev__text">Полностью синтетическая высокотехнологичная многоцелевая комплексная
+                литиевая
+                смазка на основе полиальфаолефинов.
+              </p>
+              <button class="card-prev__btn-1" onclick="window.location.href='#buy'">Заказать</button>
+              <button class="card-prev__btn-2" onclick="window.location.href='cards.html'">Подробнее</button>
+            </div>
+          </div>
+          <div class="card-prev carousel__card">
+            <div class="card-prev__img">
+              <img src="img/card-img.png" alt="card-img">
+            </div>
+            <div class="card-prev__info">
+              <h3 class="card-prev__title">TIXXONLUBE
+                LX XHP 220-5</h3>
+              <p class="card-prev__text">Синяя комплексная литиевая высококачественная консистентная смазка на
+                основе полусинтетического базового масла и полимера, содержащая антиоксиданты, ингибиторы коррозии
+                и противозадирные, противозадирные присадки.
+              </p>
+              <button class="card-prev__btn-1" onclick="window.location.href='#buy'">Заказать</button>
+              <button class="card-prev__btn-2" onclick="window.location.href='cards.html'">Подробнее</button>
+            </div>
+          </div>
+          <div class="card-prev carousel__card">
+            <div class="card-prev__img">
+              <img src="img/card-img.png" alt="card-img">
+            </div>
+            <div class="card-prev__info">
+              <h3 class="card-prev__title">TIXXONLUBE
+                LX XHP 220-6</h3>
+              <p class="card-prev__text">Полностью синтетическая высокотехнологичная многоцелевая комплексная
+                литиевая
+                смазка на основе полиальфаолефинов.
+              </p>
+              <button class="card-prev__btn-1" onclick="window.location.href='#buy'">Заказать</button>
+              <button class="card-prev__btn-2" onclick="window.location.href='cards.html'">Подробнее</button>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    </section>
+
+    <section class="feedback">
+      <div class="container feedback__box">
+        <div class="feedback__info">
+          <h2 class="feedback__title">
+            Всегда рады вам помочь
+          </h2>
+          <p class="feedback__text">
+            <span>// </span> Оставьте свой номер телефона — мы свяжемся с вами и выберем удобное время для
+            презентации:
+            мы покажем, как работает продукт и расскажем, какие задачи TIXXON может решать
+          </p>
+        </div>
+        <form class="feedback__form">
+          <input type="text" class="form__name" name="name" placeholder="Как к вам обращаться " required>
+          <input type="number" class="form__tel" name="phone" placeholder="+7 (___) ___ ____" required>
+          <input type="checkbox" class="form__checkbox modal__checkbox" id="feedback__chekbox" name="feedback__chekbox">
+          <label for="feedback__chekbox" class="form__label" required>Я согласен на обработку персональных
+            данных</label>
+          <button class="form__button" onclick="window.location.href='#'">Отправить</button>
+        </form>
+      </div>
+    </section>
+  </main>
+  <footer class="footer">
+    <div class="container footer__content">
+      <div class="footer__left">
+        <img src="img/logo-gold.svg" alt="logo footer" class="footer__logo">
+        <a href="#" class="footer__copir">Copyright 2023</a>
+        <a href="#" class="footer__polit">Политика конфиденциальности</a>
+      </div>
+      <div class="footer__center">
+        <a href="tel:+78124481911" class="footer__tel">+7 (812) 448-19-11</a>
+        <a href="mailto:info@tixxon.com" class="footer__mail">info@tixxon.com</a>
+        <p class="footer__address">г.Санкт-Петербург, ул.Предпортовая, д.8</p>
+      </div>
+      <div class="footer__right">
+        <ul class="footer__menu">
+          <li class="footer__item"><a href="#">О нас</a></li>
+          <li class="footer__item"><a href="#">Продукция</a></li>
+          <li class="footer__item"><a href="#">Контакты</a></li>
+        </ul>
+
+        <a href="#order" class="footer__link">Оставить заявку</a>
+
+      </div>
+    </div>
+  </footer>
+
+  <button id="scrollTopButton" class="button-up">
+    <img src="img/button-Up.svg" alt="">
+  </button>
+
+  <div class="modal" id="order">
+    <div class="modal__window">
+      <a class="modal__close" href="#close"><img src="img/X-modal.svg" id="close" alt="modal-close"></a>
+      <h2 class="modal__title">Заполните форму</h2>
+      <p class="modal__text">Наш менеджер свяжется с вами в ближайшее время</p>
+      <form action="" class="modal__form">
+        <input type="text" class="modal__name" name="name" placeholder="Как к Вам обращаться" required>
+        <input type="number" class="modal__phone" name="phone" placeholder="+7 (___) ___-____" required>
+        <input type="email" class="modal__email" name="email" placeholder="Email" required>
+        <textarea name="message" id="order__message" cols="30" rows="10" class="modal__message"
+          placeholder="Комментарий"></textarea>
+        <input type="checkbox" class="modal__checkbox" id="order__checkbox" name="order__checkbox">
+        <label for="order__checkbox" class="modal__label">Я согласен на обработку персональных данных</label>
+        <button class="modal__button">Заказать</button>
+      </form>
+    </div>
+  </div>
+
+  <div class="modal" id="advice">
+    <div class="modal__window">
+      <a class="modal__close" href="#close"><img src="img/X-modal.svg" id="close" alt="modal-close"></a>
+      <h2 class="modal__title">Получить консультацию <br> по продуктам</h2>
+      <p class="modal__text">Заполните форму, и мы свяжемся с вами для подробной бесплатной консультации</p>
+      <form action="" class="modal__form">
+        <input type="text" class="modal__name" name="name" placeholder="Как к Вам обращаться" required>
+        <input type="number" class="modal__phone" name="phone" placeholder="+7 (___) ___-____" required>
+        <input type="email" class="modal__email" name="email" placeholder="Email" required>
+        <textarea name="message" id="advice__message" cols="30" rows="10" class="modal__message"
+          placeholder="Комментарий"></textarea>
+        <input type="checkbox" class="modal__checkbox" id="advice__checkbox" name="advide__checkbox">
+        <label for="advice__checkbox" class="modal__label">Я согласен на обработку персональных данных</label>
+        <button class="modal__button">Заказать</button>
+      </form>
+    </div>
+  </div>
+
+  <div class="modal buy" id="buy">
+    <div class="modal__window">
+      <a class="modal__close" href="#close"><img src="img/X-modal.svg" id="close" alt="modal-close"></a>
+      <h2 class="modal__title buy__title">Смазка TIXXONLUBE LX XHP 220-2</h2>
+      <form action="" class="modal__form">
+        <input type="text" class="modal__name" name="name" placeholder="Как к Вам обращаться" required>
+        <input type="number" class="modal__phone" name="phone" placeholder="+7 (___) ___-____" required>
+        <input type="email" class="modal__email" name="email" placeholder="Email" required>
+        <textarea name="message" id="buy__message" cols="30" rows="10" class="modal__message"
+          placeholder="Комментарий"></textarea>
+      </form>
+      <p>Количество</p>
+      <div class="quantity-control">
+        <button class="quantity-control__button quantity-control__decrement"></button>
+        <input type="text" class="quantity-control__input" value="1">
+        <button class="quantity-control__button quantity-control__increment"></button>
+      </div>
+      <p>Сумма заказа</p>
+      <p class="buy__price">15 950 ₽</p>
+      <button class="modal__button">Заказать</button>
+      <p class="buy__text">
+        Нажимая на кнопку, вы соглашаетесь с политикой обработки персональных данных.
+      </p>
+    </div>
+  </div>
+
+</body>
+
+</html>
