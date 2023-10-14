@@ -55,8 +55,6 @@ input::-webkit-inner-spin-button {
 @import "_modal.scss";
 //Дополнительные стили каталога
 @import "_catalog.scss";
-//Медиа запросы
-@import "_media.scss";
 
 /*main site*/
 
@@ -643,8 +641,8 @@ input::-webkit-inner-spin-button {
 .button-up {
     display: none;
     position: fixed;
-    bottom: 258px;
-    right: 262px;
+    bottom: 25%;
+    right: 14%;
     width: 82px;
     height: 82px;
     padding: 14px;
@@ -658,3 +656,6 @@ input::-webkit-inner-spin-button {
         0px 0px 0px 0px rgba(0, 0, 0, 0.1),
         -732px 0px 205px 0px rgba(0, 0, 0, 0);
 }
+
+//Медиа запросы
+@import "_media.scss";

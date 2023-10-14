@@ -64,9 +64,95 @@
           <a href="catalog.html">Каталог</a> <span>/</span>
           <p>TIXXONLUBE LX XHP 220-2</p>
         </div>
+        <div class="cards__box">
+          <div class="cards__images">
+            <img src="img/card-img.png" alt="">
+          </div>
+          <div class="cards__content">
+            <div class="cards__head">
+              <h1 class="cards__title">
+                TIXXONLUBE LX XHP 220-2
+              </h1>
+              <button class="cards__button" onclick="window.location.href='#advice'">
+                Узнать подробнее
+              </button>
+            </div>
+            <div class="cards__tabs product__tabs">
 
+              <input class="cards__input product__input" type="radio" name="product__tab-btn" id="tab-btn-1-1" value=""
+                checked>
+              <label for="tab-btn-1-1">Описание</label>
+              <input class="cards__input product__input" type="radio" name="product__tab-btn" id="tab-btn-1-2" value="">
+              <label for="tab-btn-1-2">Характеристики</label>
+              <input class="cards__input product__input" type="radio" name="product__tab-btn" id="tab-btn-1-3" value="">
+              <label for="tab-btn-1-3">Применение</label>
+              <input class="cards__input product__input" type="radio" name="product__tab-btn" id="tab-btn-1-4" value="">
+              <label for="tab-btn-1-4">Фасовка</label>
+              <input class="cards__input product__input" type="radio" name="product__tab-btn" id="tab-btn-1-5" value="">
+              <label for="tab-btn-1-5">Аналоги</label>
+              <input class="cards__input product__input" type="radio" name="product__tab-btn" id="tab-btn-1-6" value="">
+              <label for="tab-btn-1-6">Документация</label>
 
-    <!-- <section class="feedback">
+              <div class="tabs__content" id="content-1-1">
+                <ul>
+                  <li>Синяя комплексная литиевая высококачественная консистентная смазка на основе полусинтетического
+                    базового масла и полимера, содержащая антиоксиданты, ингибиторы коррозии и противозадирные,
+                    противозадирные присадки. </li>
+                  <li>Комплексный литиевый загуститель продлевает интервалы повторного смазывания благодаря высокой
+                    степени механической стабильности. </li>
+                  <li>Смазка адаптирована к влажным условиям благодаря включению полимера в матрицу загустителя, что
+                    повышает адгезионные и водостойкие свойства.</li>
+                </ul>
+              </div>
+              <div class="tabs__content" id="content-1-2">
+                <div class="cards__property">
+                  <div class="cards__item">
+                    <p class="cards__item-name">Производитель</p>
+                    <p class="cards__item-value">TIXXON</p>
+                  </div>
+                  <div class="cards__item">
+                    <p class="cards__item-name">Артикул</p>
+                    <p class="cards__item-value">4227200</p>
+                  </div>
+                  <div class="cards__item">
+                    <p class="cards__item-name">Основа</p>
+                    <p class="cards__item-value">полусинтетическая</p>
+                  </div>
+                  <div class="cards__item">
+                    <p class="cards__item-name">Вес</p>
+                    <p class="cards__item-value">370г</p>
+                  </div>
+                  <div class="cards__item">
+                    <p class="cards__item-name">Область применения</p>
+                    <p class="cards__item-value">для смазывания всех типов подшипников качения и скольжения, шарниров
+                      зубчатых и иных передач, индустриальных механизмов, электромашин</p>
+                  </div>
+                </div>
+              </div>
+              <div class="tabs__content" id="content-1-3">
+                <ul>
+                  <li> Автомобильная промышленность: для смазки подшипников колес, рулевых механизмов, шарниров и других
+                    движущихся частей автомобилей.</li>
+                  <li> Промышленное производство: для смазки оборудования, такого как насосы, компрессоры, вентиляторы,
+                    приводы и механизмы.</li>
+                  <li>Обслуживание и техническое обслуживание: для смазки подшипников, шарниров, замков, петель и других
+                    механизмов в бытовой технике, компьютерах, электронике и других устройствах.</li>
+                </ul>
+              </div>
+              <div class="tabs__content" id="content-1-4">
+                <ul>
+                  <li><b>Тубы:</b> обычно объемом от 100 г до 500 г. Такие тубы удобны для мелких работ и обслуживания.</li>
+                  <li><b>Банки:</b> объемом от 1 кг до 20 кг. Банки обычно используются для средних и крупных работ</li>
+                  <li><b>Барабаны:</b> объемом от 180 кг до 200 кг. Барабаны предназначены для промышленного использования и крупных объемов.</li>
+                </ul>
+              </div>
+              <div class="tabs__content" id="content-1-5"><p>Важно отметить, что каждая из этих смазок может иметь некоторые отличия в своих характеристиках и применении. Поэтому, перед выбором аналога, рекомендуется обратиться к спецификациям и рекомендациям производителя для определения наиболее подходящего продукта для конкретных потребностей и условий эксплуатации.</p></div>
+              <div class="tabs__content" id="content-1-6">Документация</div>
+            </div>
+          </div>
+        </div>
+    </section>
+    <section class="feedback">
       <div class="container feedback__box">
         <div class="feedback__info">
           <h2 class="feedback__title">
@@ -84,7 +170,7 @@
           <input type="checkbox" class="form__checkbox modal__checkbox" id="feedback__chekbox" name="feedback__chekbox">
           <label for="feedback__chekbox" class="form__label" required>Я согласен на обработку персональных
             данных</label>
-          <button class="form__button" onclick="window.location.href='#'">Отправить</button>
+          <button class="form__button">Отправить</button>
         </form>
       </div>
     </section>
@@ -112,7 +198,7 @@
 
       </div>
     </div>
-  </footer> -->
+  </footer>
 
   <button id="scrollTopButton" class="button-up">
     <img src="img/button-Up.svg" alt="">
