@@ -66,6 +66,10 @@
     &__dropdown {
         position: relative;
         display: inline-block;
+        & button {
+            border: none;
+            outline: none;
+        }
         &-btn {
             display: flex;
             width: 238px;
